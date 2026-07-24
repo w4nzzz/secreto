@@ -585,3 +585,24 @@ section{ position: relative; z-index: 1; }
   border-radius: 12px;
   animation: gentle-float 4s ease-in-out infinite;
 }
+
+/*PARA CELU*/
+@media (max-width: 640px){
+  .letter{
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch; /* scroll suave en iOS */
+  }
+
+  .letter .note{
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+
+  .details{
+    gap: 6px;
+  }
+
+  .detail-row{
+    padding: 8px 10px;
+  }
+}
