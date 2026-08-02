@@ -612,3 +612,48 @@ section{ position: relative; z-index: 1; }
     padding: 8px 10px;
   }
 }
+/* ===== DÍA DE LA NOVIA ===== */
+.valentine-section{
+  padding: 60px 24px 80px;
+  text-align: center;
+}
+
+.valentine-title{
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: 600;
+  color: var(--rose-deep);
+  font-size: clamp(1.8rem, 6vw, 2.8rem);
+  margin: 20px 0;
+}
+
+.valentine-heart{
+  display: inline-block;
+  color: var(--rose-deep);
+  animation: heartbeat 1.2s ease-in-out infinite;
+}
+
+@keyframes heartbeat{
+  0%, 100% { transform: scale(1); }
+  25% { transform: scale(1.2); }
+  40% { transform: scale(1); }
+}
+
+.valentine-gifs{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.valentine-gif{
+  width: 110px;
+  border-radius: 14px;
+  box-shadow: 0 10px 24px rgba(212,106,133,.2);
+  animation: gentle-float 4s ease-in-out infinite;
+}
+
+@media (max-width: 500px){
+  .valentine-gif{ width: 80px; }
+}
