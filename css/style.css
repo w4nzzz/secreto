@@ -748,3 +748,23 @@ section{ position: relative; z-index: 1; }
 @media (max-width: 640px){
   .reasons-grid{ grid-template-columns: repeat(2, minmax(0,1fr)); }
 }
+/* razones con gif */
+.flip-card-back.has-media{
+  flex-direction: column;
+  gap: 8px;
+  padding: 12px;
+}
+
+.flip-card-back.has-media img{
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.flip-card-back.has-media p{
+  margin: 0;
+  font-family: 'Caveat', cursive;
+  font-size: 1.15rem;
+  line-height: 1.2;
+}
