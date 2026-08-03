@@ -625,6 +625,7 @@ section{ position: relative; z-index: 1; }
   color: var(--rose-deep);
   font-size: clamp(1.8rem, 6vw, 2.8rem);
   margin: 20px 0;
+  text-align: center;
 }
 
 .valentine-heart{
