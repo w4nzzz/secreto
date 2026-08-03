@@ -657,3 +657,22 @@ section{ position: relative; z-index: 1; }
 @media (max-width: 500px){
   .valentine-gif{ width: 80px; }
 }
+
+/* 03/08 */
+.final-note-section{
+  display: flex;
+  justify-content: center;
+  padding: 20px 24px 90px;
+}
+
+.sticky-big{
+  max-width: 280px;
+  padding: 46px 30px;
+  font-size: 2.2rem;
+}
+
+.sticky-big .pin{
+  width: 18px;
+  height: 18px;
+  top: -10px;
+}
