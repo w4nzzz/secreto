@@ -88,3 +88,20 @@ document.querySelectorAll('.flip-card').forEach(card => {
     card.classList.toggle('flipped');
   });
 });
+
+// carrusel la vida lvavida
+document.querySelectorAll('.carousel').forEach(carousel => {
+  const slides = carousel.querySelectorAll('.carousel-slide');
+  const prevBtn = carousel.querySelector('.prev');
+  const nextBtn = carousel.querySelector('.next');
+  let current = 0;
+
+  function showSlide(index) {
+    slides[current].classList.remove('active');
+    current = (index + slides.length) % slides.length;
+    slides[current].classList.add('active');
+  }
+
+  prevBtn.addEventListener('click', () => showSlide(current - 1));
+  nextBtn.addEventListener('click', () => showSlide(current + 1));
+});
