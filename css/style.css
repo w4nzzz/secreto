@@ -764,7 +764,10 @@ section{ position: relative; z-index: 1; }
 
 .flip-card-back.has-media p{
   margin: 0;
-
+  font-family: 'Caveat', cursive;
+  font-size: 1.15rem;
+  line-height: 1.2;
+}
 
 /* ===== NUESTRAS CITAS (CARRUSEL) ===== */
 .dates-section{
@@ -841,8 +844,4 @@ section{ position: relative; z-index: 1; }
 
 @media (max-width: 480px){
   .carousel-arrow{ width: 34px; height: 34px; font-size: 1.2rem; }
-}
-  font-family: 'Caveat', cursive;
-  font-size: 1.15rem;
-  line-height: 1.2;
 }
